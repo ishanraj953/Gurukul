@@ -3,11 +3,15 @@ body{
     display: flex !important;
     flex-direction: column;
     height: 100vh;
-    
 }
 
 .container{
     flex: 1;
+    display: flex;            /* center content */
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+    padding: 2rem;            /* optional spacing */
+    margin-top: 10%;
 }
 
 a{
@@ -25,7 +29,6 @@ a{
 
 .card-img-top{
     border-radius: 1rem 1rem 0 0!important;
-    height: 20rem;
     object-fit: cover !important;
 }
 

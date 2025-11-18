@@ -1,0 +1,40 @@
+<% layout('layouts/boilerplate') -%>
+
+
+<h2 class="text-center mb-4 mb-4 mt-4">All Students</h2>
+<table class="table table-hover align-middle">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">Profile</th>
+      <th scope="col">Name</th>
+      <th scope="col" class="text-end">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% for (let std of allListing) { %>
+      <tr>
+        <!-- Profile Image -->
+        <td>
+          <img 
+            src="<%= std.image.url %>" 
+            alt="Profile" 
+            class="rounded-circle"
+            width="40"
+            height="40"
+          >
+        </td>
+
+        <!-- Name -->
+        <td class="fw-semibold"><%= std.name %></td>
+
+        <!-- View Button -->
+        <td class="text-end">
+          <a href="/student/<%= std._id %>" class="btn btn-primary btn-sm">
+            View
+          </a>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
