@@ -1,0 +1,34 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.container{
+    flex: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    border: solid  rgb(172, 170, 170) 1px !important;
+    border-radius: 2rem;
+}
+
+.card:hover{
+    opacity: 0.8;
+}
+
+.card-img-top{
+    border-radius: 1rem 1rem 0 0!important;
+    height: 20rem;
+    object-fit: cover !important;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+}

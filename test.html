@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignan Transport Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #eef1f7;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .navbar {
+            background: #0047AB;
+            color: white;
+            padding: 22px 40px;
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 18px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0047AB;
+        }
+
+        .desc {
+            margin-top: 6px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        Vignan University — Transport Dashboard
+    </div>
+
+    <div class="container">
+
+        <div class="grid">
+
+            <!-- Bus Routes -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/460376/pexels-photo-460376.jpeg" alt="">
+                <div class="card-content">
+                    <div class="title">Bus Routes</div>
+                    <div class="desc">View all buses, stops, and route schedules.</div>
+                </div>
+            </div>
+
+            <!-- Student Database -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3184643/pexels-photo-3184643.jpeg" alt="">
+                <div class="card-content">
+                    <div class="title">Student Details</div>
+                    <div class="desc">Registered students & transport information.</div>
+                </div>
+            </div>
+
+            <!-- QR Scanner -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/4831/technology-smartphone-mockup-phone.jpg" alt="">
+                <div class="card-content">
+                    <div class="title">QR Scanner</div>
+                    <div class="desc">Scan student passes to verify validity.</div>
+                </div>
+            </div>
+
+            <!-- Fee Management -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="">
+                <div class="card-content">
+                    <div class="title">Fee Management</div>
+                    <div class="desc">Track payments, pending fees & receipts.</div>
+                </div>
+            </div>
+
+            <!-- Expiry Checker -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg" alt="">
+                <div class="card-content">
+                    <div class="title">Pass Validity</div>
+                    <div class="desc">Auto-calculate transport expiry dates.</div>
+                </div>
+            </div>
+
+            <!-- Seat Allocation -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg" alt="">
+                <div class="card-content">
+                    <div class="title">Seat Allocation</div>
+                    <div class="desc">View bus seat numbers reserved for students.</div>
+                </div>
+            </div>
+
+            <!-- Driver Panel -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/977317/pexels-photo-977317.jpeg" alt="">
+                <div class="card-content">
+                    <div class="title">Driver Panel</div>
+                    <div class="desc">Access driver info and daily logs.</div>
+                </div>
+            </div>
+
+            <!-- Admin Settings -->
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1181376/pexels-photo-1181376.jpeg" alt="">
+                <div class="card-content">
+                    <div class="title">Admin Settings</div>
+                    <div class="desc">Manage the entire transportation system.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
